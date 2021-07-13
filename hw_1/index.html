@@ -63,24 +63,97 @@
             photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
         },
     ];
-    document.write(`<h2>NAME- ${simpsons[0].name}</h2> <h2>SURNAME- ${simpsons[0].surname}</h2> <h2>AGE- ${simpsons[0].age}</h2> <p>INFO- ${simpsons[0].info}</p>
-    <img src="https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png" alt="">
-<br>`);
+    document.write(`
+<div>
+    <div>
+        <h2>NAME- ${simpsons[0].name}</h2> <h2>SURNAME- ${simpsons[0].surname}</h2> <h2>AGE- ${simpsons[0].age}</h2> <p>INFO- ${simpsons[0].info}</p>
+        <img src="https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png" alt=""><br>
+    </div>
 
-    document.write(`<h2>NAME- ${simpsons[1].name}</h2> <h2>SURNAME- ${simpsons[1].surname}</h2> <h2>AGE- ${simpsons[1].age}</h2> <p>INFO- ${simpsons[1].info}</p>
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" alt="">
-<br>`);
+    <div>
+        <h2>NAME- ${simpsons[1].name}</h2> <h2>SURNAME- ${simpsons[1].surname}</h2> <h2>AGE- ${simpsons[1].age}</h2> <p>INFO- ${simpsons[1].info}</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" alt=""><br>
+    </div>
 
-    document.write(`<h2>NAME- ${simpsons[2].name}</h2> <h2>SURNAME- ${simpsons[2].surname}</h2> <h2>AGE- ${simpsons[2].age}</h2> <p>INFO- ${simpsons[2].info}</p><br>
-    <img src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png" alt=""><br>`);
+    <div>
+        <h2>NAME- ${simpsons[2].name}</h2> <h2>SURNAME- ${simpsons[2].surname}</h2> <h2>AGE- ${simpsons[2].age}</h2> <p>INFO- ${simpsons[2].info}</p><br>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png" alt=""><br>
+    </div>
 
-    document.write(`<h2>NAME- ${simpsons[3].name}</h2> <h2>SURNAME- ${simpsons[3].surname}</h2> <h2>AGE- ${simpsons[3].age}</h2> <p>INFO- ${simpsons[3].info}</p>
-    <img src="https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png" alt="">
-<br>`);
+    <div>
+        <h2>NAME- ${simpsons[3].name}</h2> <h2>SURNAME- ${simpsons[3].surname}</h2> <h2>AGE- ${simpsons[3].age}</h2> <p>INFO- ${simpsons[3].info}</p>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png" alt=""><br>
+    </div>
 
-    document.write(`<h2>NAME- ${simpsons[4].name}</h2> <h2>SURNAME- ${simpsons[4].surname}</h2> <h2>AGE- ${simpsons[4].age}</h2> <p>INFO- ${simpsons[4].info}</p><br>
-    <img src="https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png" alt="">
-<br>`);
+    <div>
+        <h2>NAME- ${simpsons[4].name}</h2> <h2>SURNAME- ${simpsons[4].surname}</h2> <h2>AGE- ${simpsons[4].age}</h2> <p>INFO- ${simpsons[4].info}</p><br>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png" alt=""><br>
+    </div>
+</div>`);
+
+</script>
+
+<script>
+    let products = [
+        {
+            title: 'Milk',
+            price: 22,
+            image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+        },
+        {
+            title: 'Juice',
+            price: 27,
+            image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+        },
+        {
+            title: 'Tomato',
+            price: 47,
+            image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+        },
+        {
+            title: 'Tea',
+            price: 15,
+            image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+        },
+    ];
+
+
+    document.write(`
+<style>
+    .product_1{
+        border: 2px solid black;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .products_img {
+        width: 450px;
+    }
+    h3 {
+        text-align: center;
+    }
+</style>
+ <div class="father">
+       <div class="product_1">
+            <h3> ${products[0].title}. Price - ${products[0].price} </h3>
+            <img class="products_img" src="https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg" alt="">
+       </div>
+
+       <div class="product_1">
+            <h3> ${products[1].title}. Price - ${products[1].price} </h3>
+            <img class="products_img" src="https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg" alt="">
+       </div>
+
+       <div class="product_1">
+            <h3> ${products[2].title}. Price - ${products[2].price} </h3>
+            <img class="products_img" src="https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74" alt="">
+       </div>
+
+       <div class="product_1">
+            <h3> ${products[3].title}. Price - ${products[3].price} </h3>
+            <img class="products_img" src="https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png" alt="">
+       </div>
+
+</div>`)
 </script>
 </body>
 </html>
