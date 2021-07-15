@@ -52,14 +52,36 @@ for (let i =0; i<blocks.length; i++) {
 
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-// let i = 0;
-// // while (i < blocks.length){
-// //     document.write(`<h1> ${blocks[i].text} </h1>`)
-// // i++
-// // }
+let blocks2 = [
+    {text: 'За '},
+    {text: 'допомогою '},
+    {text: 'циклу '},
+    {text: 'for '},
+    {text: 'і '},
+    {text: 'document.write() '},
+    {text: 'вивести '},
+    {text: '10 блоків '},
+    {text: 'div '},
+    {text: 'з довільним текстом всередині '},
+    {text: 'one '},
+    {text: 'two '},
+    {text: 'three '},
+    {text: 'four '},
+    {text: 'five '},
+    {text: 'six '},
+    {text: 'seven '},
+    {text: 'eight '},
+    {text: 'nine '},
+    {text: 'ten '}
+]
+let ii = 0;
+while (ii < blocks2.length){
+    document.write(`<h1> ${blocks2[ii].text} </h1>`)
+ii++
+}
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-// let i = 0;
-// while (i < blocks.length){
-//     document.write(`<h1> ${i} ${blocks[i].text} </h1>`)
-//     i++
-// }
+let iii = 0;
+while (iii < blocks.length){
+    document.write(`<h1> ${iii} ${blocks[iii].text} </h1>`)
+    iii++
+}
