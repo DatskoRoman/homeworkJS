@@ -141,11 +141,19 @@ class Prince {
         this.the_shoe_he_found = the_shoe_he_found;
     }
 }
-let prince = [
-    new Prince('Max', 23, 35)
-];
+let prince = new Prince('Max', 23, 35)
+;
 console.log(prince)
 
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+for (let i of cinderella){
+    if (i.foot_size === prince.the_shoe_he_found){
+        console.log(i.name + ' - ' + prince.name)
+    }
+}
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+let findOlia = cinderella.find(function (name) {
+    console.log(name);
+    return name.name === 'Olia'
+})
