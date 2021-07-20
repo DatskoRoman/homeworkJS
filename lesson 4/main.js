@@ -34,14 +34,13 @@ console.log(sort);
 
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель,
 // виробник, рік випуску, максимальна швидкість, об'єм двигуна.
-// Додати в об'єкт функції:
 
 function  Car(manufacturer, year_of_manufacture, maximum_speed, engine_capacity) {
     this.manufacturer = manufacturer;
     this.year_of_manufacture = year_of_manufacture;
     this.maximum_speed = maximum_speed;
     this.engine_capacity = engine_capacity;
-
+    // Додати в об'єкт функції:
     // -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
     this.drive = function () {
         console.log("їдемо зі швидкістю " + this.maximum_speed + " на годину");
@@ -132,8 +131,21 @@ let cinderella = [
     new  Cinderella('Olesia', 26, 40),
     new  Cinderella('Polina', 27, 34)
 ]
-console.log(cinderella)
+console.log(cinderella);
 
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+class Prince {
+    constructor(name, age, the_shoe_he_found) {
+        this.name = name;
+        this.age = age;
+        this.the_shoe_he_found = the_shoe_he_found;
+    }
+}
+let prince = [
+    new Prince('Max', 23, 35)
+];
+console.log(prince)
+
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
