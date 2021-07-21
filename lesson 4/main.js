@@ -13,16 +13,16 @@ class ClientList {
 
 // створити пустий масив, наповнити його 10 об'єктами Client
 let client = [
-    new ClientList(25, 'Igor', 'RRR', 'rrr@gmail.com', +380677771112, ["product1", "product2", "product3", "product4", "product 5"] ),
-    new ClientList(45, 'Petro', 'VVV', 'vvv@gmail.com', +380677772223, ["product1", "product2"] ),
-    new ClientList(12, 'Ivan', 'SSS', 'sss@gmail.com', +380677773334, ["product1", "product2", "product4", "product 5"] ),
-    new ClientList(85, 'Misha', 'JJJ', 'jjj@gmail.com', +380677774445, ["product1"] ),
-    new ClientList(105, 'Taras', 'LLL', 'lll@gmail.com', +380677775556, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9", "product 10"] ),
-    new ClientList(5, 'Roman', 'PPP', 'ppp@gmail.com', +380677776667, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9","product10", "product11", "product12", "product13",] ),
-    new ClientList(135, 'Yurii', 'HHH', 'hhh@gmail.com', +380677777778, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9"] ),
-    new ClientList(88, 'Kostia', 'FFF', 'fff@gmail.com', +380677778889, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8",] ),
-    new ClientList(175, 'Oksana', 'UUU', 'uuu@gmail.com', +380677779990, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9"] ),
-    new ClientList(31, 'Ira', 'KKK', 'kkk@gmail.com', +380677770001, ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8",] )
+    new ClientList(25, 'Igor', 'RRR', 'rrr@gmail.com', '+380677771112', ["product1", "product2", "product3", "product4", "product 5"] ),
+    new ClientList(45, 'Petro', 'VVV', 'vvv@gmail.com', '+380677772223', ["product1", "product2"] ),
+    new ClientList(12, 'Ivan', 'SSS', 'sss@gmail.com', '+380677773334', ["product1", "product2", "product4", "product 5"] ),
+    new ClientList(85, 'Misha', 'JJJ', 'jjj@gmail.com', '+380677774445', ["product1"] ),
+    new ClientList(105, 'Taras', 'LLL', 'lll@gmail.com', '+380677775556', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9", "product 10"] ),
+    new ClientList(5, 'Roman', 'PPP', 'ppp@gmail.com', '+380677776667', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9","product10", "product11", "product12", "product13",] ),
+    new ClientList(135, 'Yurii', 'HHH', 'hhh@gmail.com', '+380677777778', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9"] ),
+    new ClientList(88, 'Kostia', 'FFF', 'fff@gmail.com', '+380677778889', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8",] ),
+    new ClientList(175, 'Oksana', 'UUU', 'uuu@gmail.com', '+380677779990', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8", "product9"] ),
+    new ClientList(31, 'Ira', 'KKK', 'kkk@gmail.com', '+380677770001', ["product1", "product2", "product3", "product4", "product 5","product6", "product7", "product8",] )
 ]
 console.log(client)
 

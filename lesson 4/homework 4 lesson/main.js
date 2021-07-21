@@ -1,7 +1,8 @@
 // - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
-    let random10 = [];
+
      function getRandom() {
+         let random10 = [];
     for (let i = 0; i < 10; i++) {
         random10.push(Math.round(Math.random() * 100))
     }
@@ -16,7 +17,6 @@ console.log(getRandom())
 // - Змінти попередню функцію, щоб діапазон можна було визначити через аргументи.
 let random1 = []
 function getRandom1(min, max) {
-
 for (let i = 0; i < 20; i++) {
     random1.push(Math.round(Math.random() * (max - min) + min))
 }
