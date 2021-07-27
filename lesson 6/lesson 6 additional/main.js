@@ -11,7 +11,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(responce => responce.json())
     .then(users => {
         let users_box = document.getElementsByClassName('users_block')[0];
-        users_box.innerHTML = '';
+        users_box.innerHTML = ' ';
         for (const user of users) {
             let p_user = document.createElement('p');
             p_user.innerText = `${user.id} - ${user.name}`;
