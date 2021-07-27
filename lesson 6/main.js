@@ -2,18 +2,18 @@
 // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
 // https://jsonplaceholder.typicode.com/posts
 
-//     fetch('https://jsonplaceholder.typicode.com/posts')
-//         .then(function (posts) {
-//            return  posts.json()
-//         })
-//         .then(function (posts2) {
-//             let userPost = document.getElementsByClassName('block_post')[0];
-//             for (const user of posts2 ){
-//                 let divPost = document.createElement('div');
-//                 divPost.innerText = user.userId + ' ' + user.id + ' ' + user.title + ' ' + user.body
-//                 userPost.append(divPost);
-//             }
-//         });
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(function (posts) {
+           return  posts.json()
+        })
+        .then(function (posts2) {
+            let userPost = document.getElementsByClassName('block_post')[0];
+            for (const user of posts2 ){
+                let divPost = document.createElement('div');
+                divPost.innerText = user.userId + ' ' + user.id + ' ' + user.title + ' ' + user.body
+                userPost.append(divPost);
+            }
+        });
 
 //     2.
 // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті

@@ -59,10 +59,11 @@
                     changeColorText.style.color = prompt("Enter the color you want on the text???");
             }
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-//         let changeText = document.getElementsByClassName('content_1');
-//             for (let newText of changeText){
-//                 newText.innerText = prompt("Enter the new text");
-//             }
+            let changeText;
+                changeText = document.querySelector('.content_1 p');
+            for (let newText of changeText){
+                newText.innerText = prompt("Enter the new text");
+            }
 // l) отримати елементи p та змінити їм padding на 20px
         let changePadding = document.getElementsByTagName('p');
             for (let newPadding of changePadding){
