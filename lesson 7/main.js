@@ -38,7 +38,7 @@
     function breakfast() {
         return new Promise(resolve => {
                setTimeout(() => {
-                console.log('have breakfast');
+                console.log('i have a breakfast');
                 resolve('you had a wonderful breakfast')
             }, 300)
         });
@@ -63,7 +63,6 @@
     function goToCar() {
         return new Promise(resolve => {
             setTimeout(() => {
-                console.log("go to car")
                 resolve('I go to car')
             }, 160)
         });
@@ -71,7 +70,6 @@
     function goToShop() {
         return new Promise(resolve => {
             setTimeout(() => {
-                console.log('go to shop');
                 resolve('I go to shop')
             }, 150)
         });
@@ -79,7 +77,6 @@
     function goToParking() {
         return new Promise(resolve => {
             setTimeout(() => {
-                console.log('go to parking');
                 resolve('I go to parking')
             }, 110)
         });
@@ -87,7 +84,6 @@
     function goToStudy() {
         return new Promise(resolve => {
             setTimeout(() => {
-                console.log('go to study');
                 resolve('I go to study')
             }, 240)
         });
@@ -101,65 +97,74 @@
         });// return new Promise(resolve
     } // function great_shedule()
 
-    my_schedule(14)
-        .then((value)=>{
-        console.log('wonderful');
-        console.log(value);
-        return shower ()
-        })
-        .then((eat)=>{
-            console.log(eat);
-            return breakfast()
-        })
-        .then((read) =>{
-            console.log(read);
-            return reading()
-        })
-        .then((study)=>{
-            console.log(study);
-            return english()
-        })
-        .then((car)=>{
-            console.log(car);
-            return goToCar()
-        })
-        .then((shop)=>{
-            console.log(shop);
-            return goToShop()
-        })
-        .then((parkingCar)=>{
-            console.log(parkingCar);
-            return goToParking()
-        })
-        .then((study)=>{
-            console.log(study);
-            return goToStudy()
-        })
-        .then((courses) =>{
-            console.log(courses);
-            return great_shedule()
-        })
-        .then((finish)=>{
-            console.log(finish)
-        })
-    .catch(reason => {
-        console.log('**********')
-        console.log(reason);
-        console.log(('**********'))
-    })
+    // my_schedule(14)
+    //     .then((value)=>{
+    //     console.log('wonderful');
+    //     console.log(value);
+    //     return shower ()
+    //     })
+    //     .then((eat)=>{
+    //         console.log(eat);
+    //         return breakfast()
+    //     })
+    //     .then((read) =>{
+    //         console.log(read);
+    //         return reading()
+    //     })
+    //     .then((study)=>{
+    //         console.log(study);
+    //         return english()
+    //     })
+    //     .then((car)=>{
+    //         console.log(car);
+    //         return goToCar()
+    //     })
+    //     .then((shop)=>{
+    //         console.log(shop);
+    //         return goToShop()
+    //     })
+    //     .then((parkingCar)=>{
+    //         console.log(parkingCar);
+    //         return goToParking()
+    //     })
+    //     .then((study)=>{
+    //         console.log(study);
+    //         return goToStudy()
+    //     })
+    //     .then((courses) =>{
+    //         console.log(courses);
+    //         return great_shedule()
+    //     })
+    //     .then((finish)=>{
+    //         console.log(finish)
+    //     })
+    // .catch(reason => {
+    //     console.log('**********')
+    //     console.log(reason);
+    //     console.log(('**********'))
+    // })
 // ********************************************************************************
 
-    // async function myDay() {
-    //     const owu = await my_schedule(16);
-    //     console.log(owu);
-    //     await shower();
-    //     await breakfast();
-    //     await reading();
-    //     await english();
-    //     await goToCar();
-    //     await goToShop();
-    //     await goToParking();
-    //     await goToStudy();
-    //     await great_shedule();
-    // }
-    // myDay()
+    async function myDay() {
+        const owu = await my_schedule(14);
+        console.log(owu);
+        const owu1 = await shower();
+        console.log(owu1);
+        const owu2 = await breakfast();
+        console.log(owu2);
+        const owu3 = await reading();
+        console.log(owu3);
+        const owu4 = await english();
+        console.log(owu4);
+        const owu5 = await goToCar();
+        console.log(owu5);
+        const owu6 = await goToShop();
+        console.log(owu6);
+        const owu7 = await goToParking();
+        console.log(owu7);
+        const owu8 = await goToStudy();
+        console.log(owu8);
+        const owu9 = await great_shedule();
+        console.log(owu9);
+    }
+    myDay()
