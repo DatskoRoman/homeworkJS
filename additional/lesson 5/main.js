@@ -2,9 +2,23 @@
 // - Створити форму з інпутом для введення ім'я, та action="index2.html".
 // При відправці данних з форми, зберігати ім'я в localstorage, та переходити на index2.html.
 // На index2.html виводити записане в localstorage ім'я в div
-let localStorage = localStorage.getItem('key')
-console.log(JSON.parse(localStorage))
+
+// let localStorage = localStorage.getItem('key')
+// console.log(JSON.parse(localStorage));
 //
+    let test = document.forms.test;
+    let nameInput = test.username;
+        test.addEventListener('submit', (event) => {
+        // event.preventDefault();
+        let username = nameInput.value;
+        let user = {
+            username: username,
+        };
+        let jsonUser = JSON.stringify(user);
+        localStorage.setItem('user', jsonUser);
+    });
+
+
 // - Імітуємо наповнення інтернет магазину товарами :
 //     Створити форму з наступними полями :
 //     - назва товару
