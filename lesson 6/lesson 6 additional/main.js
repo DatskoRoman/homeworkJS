@@ -28,6 +28,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
                         for (const user_post of value) {
                             let p_post = document.createElement('p');
                             p_post.innerText = `${user_post.id} - ${user_post.body}`;
+                            let p_post1 = document.createElement('p');
+                            p_post.innerText = `${user_post.id} - ${user_post.body}`;
                             let comments_block = document.createElement('div');
                             let button_post = document.createElement('button');
                             button_post.innerText = 'comments on the current post';

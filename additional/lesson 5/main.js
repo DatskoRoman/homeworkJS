@@ -3,9 +3,6 @@
 // При відправці данних з форми, зберігати ім'я в localstorage, та переходити на index2.html.
 // На index2.html виводити записане в localstorage ім'я в div
 
-// let localStorage = localStorage.getItem('key')
-// console.log(JSON.parse(localStorage));
-//
     let test = document.forms.test;
     let nameInput = test.username;
         test.addEventListener('submit', (event) => {
