@@ -9,14 +9,15 @@ const post = JSON.parse(jsonUser);
 const div_post = document.getElementById('post_info');
 div_post.innerText = jsonUser;
 
-let comment_block = document.getElementsByClassName('comments')[0];
-fetch(`https://jsonplaceholder.typicode.com/posts/${user.id}/comments`)
+
+fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
 .then(user => user.json())
 .then(users =>{
-    for (const comment of users){
+    let comment_block = document.getElementById('comments');
+    for (let comment of users){
         let p_comment = document.createElement('p');
         p_comment.innerText = comment.body;
-        comment_block.appendChild(p_comment);
+        comment_block.appendChild(p_comment)
 
     }
 })

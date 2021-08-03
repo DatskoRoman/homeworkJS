@@ -1,0 +1,30 @@
+/*Стилизация проекта -*/
+/*index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.*/
+#user_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px;
+    background-color: white;
+}
+
+div {
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    border: black solid 1px;
+    width: 49%;
+    display: block;
+    margin: 2px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+}

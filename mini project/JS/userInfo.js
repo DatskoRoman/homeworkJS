@@ -8,6 +8,7 @@ const url = new URL(location);
 const jsonUser = url.searchParams.get('user');
 const user = JSON.parse(jsonUser)
 const div_user = document.getElementById('info_user')
+let p_user = document.createElement('p');
 div_user.innerText = jsonUser;
 
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -15,6 +16,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(users => {
         console.log(users);
         let users_box = document.getElementsByClassName('post_user_block')[0];
+        let main_div = document.createElement('div');
+        main_div.classList.add('main_post_div')
         let post_button = document.createElement('button');
         post_button.innerText = 'post of current user';
         users_box.appendChild(post_button);
@@ -22,14 +25,21 @@ fetch('https://jsonplaceholder.typicode.com/users')
             fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
                 .then(value => value.json())
                 .then(value => {
+                main_div.innerHTML = ''
                     for (const post of value) {
+                        let div_post = document.createElement('div');
+                        div_post.classList.add('post');
                         let p_post = document.createElement('p');
                         p_post.innerText = post.title;
-                        users_box.appendChild(p_post);
                         let a_post = document.createElement('a');
                         a_post.innerText = 'post-details';
                         a_post.href = `post-details.html?post_info=${JSON.stringify(post)}`;
-                        users_box.appendChild(a_post);
+
+                        div_post.appendChild(p_post);
+                        div_post.appendChild(a_post);
+                        main_div.appendChild(div_post);
+                        users_box.appendChild(main_div);
+
                     }
                 });
         };
