@@ -3,13 +3,28 @@
  /*что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)*/
 #post_info{
     margin-bottom: 20px;
-    background-color: darkgrey;
+    background-color: gold;
     font-size: 24px;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: black solid 2px;
+    border-radius: 20px;
 }
  #comments{
      display: flex;
      flex-wrap: wrap;
      width: 100%;
+     margin-left: 2%;
+     margin-right: 2%;
+ }
+ h1{
+     text-align: center;
+     font-size: 24px;
+ }
+ h2{
+     text-align: center;
+     font-size: 30px;
  }
  p{
      box-sizing: border-box;
@@ -17,7 +32,8 @@
      border: black solid 1px;
      padding: 30px;
      margin: 1px;
-     font-size: 20px;
+     font-size: 25px;
      background-color: bisque;
+     border-radius: 20px;
 
  }
